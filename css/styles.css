@@ -57,8 +57,9 @@ h4,
 h5,
 h6 {
     font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     text-transform: uppercase;
+    color: #303030;
 }
 
 .m0                     { margin: 0; }
@@ -284,7 +285,8 @@ fieldset[disabled] .btn-xl.active {
     font-weight: 600;
     letter-spacing: 1px;
     color: #181c2a;
-    padding: 35px 45px;
+    padding: 32px 47px;
+    font-size: 13px;
 }
 
 .navbar-default .nav li a:hover,
@@ -294,6 +296,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     background-color: #dedede;
+    color: #181c2a;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -379,7 +382,7 @@ header .phone-banner {
         margin-bottom: 0;
         font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 45px;
-        font-weight: 300;
+        font-weight: 100;
         line-height: 40px;
         text-transform: uppercase;
     }
