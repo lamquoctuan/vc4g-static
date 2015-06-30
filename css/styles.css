@@ -429,6 +429,8 @@ section h3.section-subheading {
 #whatwebuy .whatwebuy-item {
     right: 0;
     margin: 0 0 15px;
+    width: 33.33333333%;
+    float:left;
 }
 
 #whatwebuy .whatwebuy-item .whatwebuy-link {
@@ -440,22 +442,28 @@ section h3.section-subheading {
 
 #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 160px;
+    height: 160px;
     opacity: 0;
-    background: rgba(254,209,54,.9);
+    background: rgba(0,0,0,.5);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
+    border-radius:130px;
+    left:20%;
+    top: 10px;
 }
 
 #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover:hover {
     opacity: 1;
 }
+#whatwebuy span {display: block; font-size: 13px; text-transform: uppercase;}
+
+#whatwebuy .icon-call {background: url(../img/group-icons.png) no-repeat -400px -144px; width: 30px; height: 30px;}
 
 #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: 100%;
     height: 20px;
     margin-top: -12px;
@@ -486,12 +494,8 @@ section h3.section-subheading {
     font-size: 16px;
 }
 
-#whatwebuy .whatwebuy-item .whatwebuy-caption p {
-    margin: 0;
-    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
-}
+#whatwebuy .btn-row-next {position: absolute; z-index:6; right: 0; top: 30%;}
+#whatwebuy .icon-next {width: 24px; height: 24px; background: url(../img/icon-next.png) no-repeat 0 0; margin-right: -15px;}
 
 #whatwebuy * {
     z-index: 2;

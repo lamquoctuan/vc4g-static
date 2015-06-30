@@ -33,7 +33,7 @@ header,navbar-fixed-top {
 .navbar-right {width: 100%}
 .navbar-fixed-top.navbar-shrink {top:0;}
 .navbar-fixed-top.navbar-shrink .navbar-right {width: auto; margin-top: 8px;}
-.navbar-default.navbar-shrink .nav li a {padding: 10px 15px;}
+.navbar-default.navbar-shrink .nav li a {padding: 10px;}
 .navbar-default.navbar-shrink .nav li.active a {
 	background: transparent;
 	color: #d19f42;
@@ -115,6 +115,7 @@ body h2 {
 #whatwebuy h5 {
 	text-transform: none;
 	font-weight: 600;
+
 }
 #whatwebuy .nav.nav-tabs li {float: none; text-align: right;}
 #whatwebuy .nav-tabs>li>a {
@@ -148,7 +149,7 @@ body h2 {
 #whatwebuy .nav-tabs>li>a.last {
 	border-bottom: solid 1px #ddd  !important;
 }
-#whatwebuy .tab-content {margin-top: -42px;}
+
 .viewall {background: url(../img/icon-view.png) right 2px no-repeat; padding-right: 20px; color: #7b7b7b; font-size: 13px; float: right; line-height: 1; margin-top: 15px;}
 .viewall:hover {background-position: right -11px;}
 
@@ -293,6 +294,15 @@ body h2 {
   .services .col-md-4 {margin-bottom:20px;}
   body h2 { font-weight: 600;  font-size: 22px;}
   #whatwebuy .nav-tabs>li>a {font-size:14px;}
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
+    width:100%;
+    height: 100%;
+    border-radius:0;
+    left:0;
+    top:0;
+  }
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 12%;}
+  #whatwebuy .icon-next {margin-right:0;}
   .bg-diamond {background: none;}
   #howwepay .nav-tabs>li>a {padding:20px 22px;}
   .roundabout-moveable-item {width:320px; height:320px;}
@@ -305,11 +315,21 @@ body h2 {
 }
 @media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
   #myRoundabout {margin-left: 25%;}
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
+    width:150px;
+    height: 150px;
+    border-radius:120px;
+    left:20%;
+     top:0;
+  }
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 20%;}
 }
 @media  only screen and (max-width: 767px)  {
   header .intro-text {padding-top: 30px;  background: none;}
   header {padding-bottom:30px;}
   header .col-md-6 { width: 50%;float: left;}
+  header .intro-text .intro-lead-in {font-weight: 100; text-transform: uppercase;font-size: 38px;  margin-bottom: 10px;}
+  header .intro-text .intro-heading {font-size: 44px; line-height:1;}
   .services .col-md-4 {margin-bottom:20px;}
   #whatwebuy .col-sm-4 { width: 33.33333333%; float:left;}
   #whatwebuy .pull-right { float: left!important;  margin-left: 15px;}
@@ -317,6 +337,15 @@ body h2 {
   #whatwebuy .nav-tabs {float:left;}
   #whatwebuy .col-sm-9 {clear: both;}
   #whatwebuy h2 {  margin-top: 0;  text-align: center;  margin-bottom: 20px;}
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
+    width:120px;
+    height: 120px;
+    border-radius:100px;
+    left:20%;
+    top:0;
+  }
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 20%;}
+  #whatwebuy .icon-next {margin-right: 10px;}
   .bg-diamond {background: none;}
   #howwepay .col-md-6 { width: 50%;float: left;}
   #howwepay .nav-tabs>li>a {font-size:15px; padding:10px;}
@@ -334,8 +363,16 @@ body h2 {
    header .col-md-6 { width: 50%;float: left;}
   .navbar-default.navbar-shrink .nav li a { padding: 10px;}
   header .intro-text {padding-bottom: 205px;  background-position:-28px bottom;}
+  .navbar-right  {margin-right:0;}
    .services .col-md-4 {margin-bottom:20px;}
   #whatwebuy h2 {font-size: 23px;}
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
+    width:100%;
+    height: 100%;
+    border-radius:0;
+    left:0;
+  }
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 12%;}
    .bg-diamond {background: none;}
    #howwepay .nav-tabs>li>a {padding: 20px;}
    #myRoundabout {margin-left: 100px;}
@@ -356,17 +393,29 @@ body h2 {
 @media only screen and (max-width: 480px)  {
   #howwepay .nav-tabs>li>a {font-size: 12px;  padding: 5px;}
   #team .col-xs-12 {width: 100%;} 
-  header .intro-text .intro-lead-in {font-size:32px;  margin-bottom: 12px;}
-  header .intro-text .intro-heading {font-size: 37px; line-height:1;}
+  header .intro-text .intro-lead-in {font-size:28px;  margin-bottom: 10px;font-weight: 100;}
+  header .intro-text .intro-heading {font-size: 32px; line-height:1;}
   header .phone-banner {  font-size: 22px;}
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
+    width:100%;
+    height: 100%;
+    border-radius:0;
+    left:0;
+  }
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 12%;}
+  #whatwebuy span.mb20 {margin-bottom:10px !important};
 
 }
 
 @media only screen and (max-width: 360px)  {
-  header .intro-text .intro-lead-in {  font-size: 26px;}
-  header .intro-text .intro-heading {  font-size: 30px;}
+  header .intro-text .intro-lead-in {  font-size: 18px; margin-bottom:0;}
+  header .intro-text .intro-heading {  font-size: 20px;}
   header a.sub-phone {display: none;}
+  .navbar-brand {  padding: 14px 0 0 15px;   width: 258px;}
   #whatwebuy .nav-tabs>li>a {font-size: 12px;}
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 25%;}
+  #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content strong {margin-bottom: 10px; display: block; font-size: 16px;}
+  #whatwebuy span {display: none;}
   .webuy, section, #team {padding: 40px 0;}
   #howwepay .col-md-6 {width: 100%; text-align: center !important;}
   .tfoot-tbl {padding: 20px;}
