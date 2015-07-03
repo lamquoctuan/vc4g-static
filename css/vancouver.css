@@ -161,7 +161,7 @@ body h2 {
     background-attachment: scroll;
     background-image: url(../img/header-bg.jpg);
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -220,7 +220,7 @@ body h2 {
     background-attachment: scroll;
     background-image: url(../img/bg-blog.jpg);
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -255,7 +255,7 @@ body h2 {
     background-attachment: scroll;
     background-image: url(../img/bg-banner-how.jpg);
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -274,7 +274,7 @@ body h2 {
     background-attachment: scroll;
     background-image: url(../img/bg-contact.jpg);
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
