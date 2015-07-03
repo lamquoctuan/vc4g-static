@@ -822,7 +822,6 @@ footer .container {border-top: solid 1px #cdcdcd;}
 footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
-    text-transform: none;
     font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
