@@ -126,7 +126,6 @@ body h2 {
   text-transform: uppercase;
   display: inline-block;
   padding: 6px 0;
-  font-weight: 600;
   font-size: 18px;
   font-weight: 400;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -158,10 +157,7 @@ body h2 {
 }
 .webuy {
 	color: #fff;
-    background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(../img/header-bg.jpg) no-repeat scroll center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -217,10 +213,7 @@ body h2 {
 #blog h2 {color: #fff;}
 .bg-blue-dark {
 	color: #fff;
-    background-attachment: scroll;
-    background-image: url(../img/bg-blog.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(../img/bg-blog.jpg) no-repeat scroll center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -252,10 +245,7 @@ body h2 {
 
 .bg-banner-how {
     color: #fff;
-    background-attachment: scroll;
-    background-image: url(../img/bg-banner-how.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(../img/bg-banner-how.jpg) no-repeat scroll center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -271,10 +261,7 @@ body h2 {
 
 .bg-deal {
 	 color: #fff;
-    background-attachment: scroll;
-    background-image: url(../img/bg-contact.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(../img/bg-contact.jpg) no-repeat scroll center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
