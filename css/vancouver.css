@@ -20,7 +20,7 @@ hr {  border-top: 1px solid #cdcdcd;}
 	color: #fff;
 }
 
-header,.navbar-fixed-top {
+header {
 	position: relative;
 }
 .navbar-default .navbar-brand {text-indent: -99999px; display: none;}
