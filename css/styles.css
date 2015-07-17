@@ -14,7 +14,7 @@ body {
 }
 
 .text-muted {
-    color: #777;
+    color: #565656;
 }
 
 .text-primary {
@@ -212,7 +212,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
+    border-color: transparent;
     color: #fff;
     background-color: #d19f42;
 }
@@ -280,7 +280,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #fed136;
+    background-color: #dedede;
 }
 
 .navbar-default .nav li a {
@@ -326,11 +326,10 @@ fieldset[disabled] .btn-xl.active {
     }
 
        .navbar-default.navbar-shrink {
-        padding: 10px 0;
         background-color: #fff;
         border-bottom: solid 1px #ddd;
     }
-
+    
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
@@ -372,6 +371,8 @@ header .phone-banner {
 	font-size: 25px;
 	margin-top: 20px;
 }
+header .phone-banner a {color: #fff;}
+header .phone-banner a:hover {color: rgba(255,255,255,0.8);}
 
 @media(min-width:768px) {
     header .intro-text {
@@ -397,6 +398,8 @@ header .phone-banner {
         line-height: 1;
     }
 }
+
+.form-control {box-shadow: none;  border-radius: 3px;}
 
 section {
     padding: 60px 0;
@@ -524,7 +527,10 @@ section h3.section-subheading {
 }
 
 
-section#contact  {padding-top: 60px;}
+section#contact  {padding-top: 60px;    color:#848484;}
+
+section#contact a {color:#848484;}
+section#contact a:hover {color:#d19f42;} 
 section#contact .menu-footer li {
 	margin-bottom: 15px;
 	font-weight: 600;
@@ -604,7 +610,9 @@ section#contact .text-danger {
 
 footer {
     padding: 25px 0;
+
 }
+
 
 footer span.copyright {
     font-size: 12px;
@@ -773,17 +781,15 @@ header {
 .navbar-fixed-top {top:auto;}
 .navbar-right {width: 100%}
 .navbar-fixed-top.navbar-shrink {top:0;}
-.navbar-fixed-top.navbar-shrink .navbar-right {width: auto; margin-top: 8px;}
-.navbar-default.navbar-shrink .nav li a {padding: 10px;}
-.navbar-default.navbar-shrink .nav li.active a {
-	background: transparent;
-	color: #d19f42;
-}
+.navbar-fixed-top.navbar-shrink .navbar-right {width: auto; margin-top: 0;}
+.navbar-default.navbar-shrink .nav li a {padding: 15px;}
+.navbar-default.navbar-shrink .nav li.active a,
 .navbar-default.navbar-shrink .nav li a:hover,
 .navbar-default.navbar-shrink .nav li a:focus {
-    background-color: transparent;
-    color: #d19f42;
+	color: #181c2a;
 }
+.navbar-default.navbar-shrink .nav li a:hover {color:rgba(24,28,42,0.5);}
+
 .navbar-default .sub-phone {display: none;} 
 
 a.sub-phone {
@@ -794,6 +800,7 @@ a.sub-phone {
   font-size: 16px;
   font-weight: 600;
 }
+a.sub-phone:hover {color: rgba(95,91,101,08);}
 
 .icon-phone {
   position: absolute;
@@ -806,7 +813,7 @@ a.sub-phone {
 .icon-search {background-position: 0 -78px; top: 4px;}
 
 .navbar-default.navbar-shrink .sub-phone {display: block; margin: 0; font-size: 13px;  padding-left: 8px !important;}
-.navbar-default.navbar-shrink .sub-phone .icon-phone {left:-20px; top:7px; background-position: -216px -144px;}
+.navbar-default.navbar-shrink .sub-phone .icon-phone {left:-20px; top:12px; background-position: -216px -144px;}
 .navbar-default.navbar-shrink .phone-text {padding-left: 25px;}
 .navbar-default.navbar-shrink .phone-text:hover a {background: transparent}
 
@@ -856,7 +863,8 @@ body h2 {
 #whatwebuy h5 {
 	text-transform: none;
 	font-weight: 600;
-
+    color: #8e8e8e;
+    font-size:14px;
 }
 #whatwebuy .nav.nav-tabs li {float: none; text-align: right;}
 #whatwebuy .nav-tabs>li>a {
@@ -922,8 +930,9 @@ body h2 {
 
 #howwepay .nav-tabs {background: #2b3042; margin-top: 30px; border-bottom: none;}
 #howwepay .nav-tabs>li {margin-bottom: 0; border-right: solid 1px #454a5e;}
+#howwepay .nav-tabs>li.active {background: #d19f42;}
 #howwepay .nav-tabs>li.active, #howwepay .nav-tabs>li:last-child {border-right: none;}
-#howwepay .nav-tabs>li>a {font-size: 18px; color: #7b7d87; border: none; padding:30px 60px; font-weight: normal;}
+#howwepay .nav-tabs>li>a {font-size: 18px; color: #7b7d87; border: none; padding:30px 10px; font-weight: normal;}
 #howwepay .nav-tabs>li:hover >a {color: #d19f42; background: none; border-radius:0;} 
 #howwepay .nav-tabs>li.active>a, 
 #howwepay .nav-tabs>li.active>a:focus,
@@ -934,8 +943,8 @@ body h2 {
 	border: none;
 }
 #howwepay .table {margin-bottom: 0; font-weight: 300;}
-#howwepay .table>thead>tr>th {font-size: 16px; padding: 20px 60px; background: #fafafa; border-bottom: none;  }
-#howwepay .table>tbody>tr>td {border-top: none; padding:15px 60px; border-right: solid 1px #e4e4e4;}
+#howwepay .table>thead>tr>th {font-size: 16px; padding: 20px; background: #fafafa; border-bottom: none;  }
+#howwepay .table>tbody>tr>td {border-top: none; padding:15px 20px; border-right: solid 1px #e4e4e4;}
 #howwepay .table>tbody>tr>td:last-child {border-right: none;}
 #howwepay .table-striped>tbody>tr {background-color: #f9f9f9;}
 #howwepay .table-striped>tbody>tr:nth-of-type(odd) {
@@ -947,8 +956,18 @@ body h2 {
 #howwepay .fa {background: url(../img/group-icons.png) no-repeat; width: 28px; height: 18px;}
 #howwepay .fa.btn1 {background-position: 0 -326px;}
 #howwepay .fa.btn2 {background-position: 0 -592px; margin-right: 10px;}
+
 #howwepay .btn.body-content:hover .fa.btn1 {background-position: 0 -846px;}
 #howwepay .btn.body-content:hover .fa.btn2 {background-position: 0 -932px;}
+.btn.body-content.dload {font-weight:500;padding: 2px 4px;}
+.btn.body-content.dload span {background: url(../img/group-icons.png) -289px -846px no-repeat; padding-left:40px; 
+    padding-top: 8px;
+   height: 32px;
+   display: inline-block;
+  padding-right: 15px;
+}
+.btn.body-content.dload span:hover {background-position:-289px -975px;}
+.bthome {color: #393939; text-decoration: underline;}
 
 #blog {padding: 60px 0 0;}
 #blog h2 {color: #fff;}
@@ -978,7 +997,6 @@ body h2 {
 #team hr, .webuy hr {margin-left:0;}
 #team blockquote {font-size: 14px; line-height:  1.75; border-left: none; background: url(../img/icon-blockquote.png) top left no-repeat;}
 #team h3 {color: #b7b7b7; text-transform: none; font-size: 20px; font-weight: 700;}
-#team .btn.body-content {font-size: 12px; text-transform: none; font-weight: 300; border-width: 1px; padding: 5px 20px;}
 
 .carousel-indicators {bottom:0;}
 .carousel-indicators li {background-color: #f0ece0; border: none;}
@@ -995,7 +1013,7 @@ body h2 {
     font-weight: 300;
     padding: 60px 0;
     height: 251px;
-      margin-top: 70px;
+      margin-top: 51px;
       text-align: center;
 }
 .bg-banner-how h2 {color:#fff;}
@@ -1046,8 +1064,8 @@ body h2 {
 .calculator .form-control.result {text-align: right;}
 .calculator select.form-control { padding-left:0 ;  padding-right: 0;}
 .calculator .form-group [class^="col"] {padding-left:2px; padding-right: 2px; }
-.calculator .form-horizontal .form-group {margin: 5px 0;}
-.bar-prd {background: #d7d7d7; padding: 5px 0; margin-left: -20px; margin-right: -20px; margin-bottom: 20px; text-align: center;}
+.calculator .form-horizontal .form-group {margin: 7px 0;}
+.bar-prd {background: #d7d7d7; padding: 10px 0; margin-left: -20px; margin-right: -20px; margin-bottom: 20px; text-align: center;}
 .bar-prd a {color:#989898; font-weight: 600; margin-left:30px; margin-right: 30px;}
 .bar-prd a:hover, .bar-prd a.active {color:#242424; text-decoration: underline;}
 .control-label.btn {background-color: #6e6e6e; color:#fff; font-weight:600; text-align: center;}
@@ -1198,7 +1216,7 @@ body h2 {
 .btn.mail {padding:10px 40px 10px 30px; margin-top: 10px; margin-bottom: 10px;}
 .btn.mail span {background: url(../img/icon-email.png) 0 -3px no-repeat; padding-left: 38px; color: #fff; }
 
-.map-contact {margin-top: 70px;}
+.map-contact {margin-top: 51px;}
 .place-ct {padding: 50px 0;}
 .place-ct p {font-size: 13px; line-height: 24px; margin-bottom:5px; color: #2e2e2e;}
 .place-ct .fa {background: url(../img/group-icons.png) no-repeat; width: 88px; height: 88px;}
@@ -1224,14 +1242,18 @@ body h2 {
 .services.thanks .fa-stack {background: url(../img/group-icons.png) -525px -1103px no-repeat; width: 146px; height: 146px;padding-top: 30px;padding-bottom: 30px;}
 .services.thanks .text-muted {color:#565656;}
 
+.navbar-toggle {margin:0;  padding: 20px; border-radius:0;}
+
 @media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+     .navbar-default.navbar-fixed-top.navbar-shrink .navbar-brand img { width: 54%;}
   .col-md-6 { width: 50%;float: left;}
   .navbar-fixed-top.navbar-shrink .navbar-right {  position: absolute;  right: 10px;}
   .navbar-default .nav li a {padding: 25px 22px;}
-  .navbar-default.navbar-shrink .nav li a { padding: 10px 5px; font-size: 12px;}
+  .navbar-default.navbar-shrink .nav li a { padding: 15px 5px; font-size: 12px;}
   header .intro-text {background:none; padding-bottom:100px;}
-  .services {padding:80px 0;}
+  .services {padding:80px 0 20px 0;;}
   .services .col-md-4 {margin-bottom:20px;}
+  .services button {margin-bottom: 30px;}
   body h2 { font-weight: 600;  font-size: 22px;}
   #whatwebuy .nav-tabs>li>a {font-size:14px;}
   #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
@@ -1244,7 +1266,7 @@ body h2 {
   #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 12%;}
   #whatwebuy .icon-next {margin-right:0;}
   .bg-diamond {background: none;}
-  #howwepay .nav-tabs>li>a {padding:20px 22px;}
+    #howwepay .table>thead>tr>th {  padding: 20px;}
   .roundabout-moveable-item {width:320px; height:320px;}
   #myRoundabout {margin-left: 124px;  margin-top: 142px;}
   .sphere-content {padding-top:25px;}
@@ -1276,6 +1298,7 @@ body h2 {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: landscape) {
+   
   .navbar-fixed-top.navbar-shrink .navbar-right {  position: absolute;  right: 40px;}
   #myRoundabout {margin-left: 25%;}
   #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
@@ -1303,6 +1326,9 @@ body h2 {
   header .intro-text .intro-lead-in {font-weight: 100; text-transform: uppercase;font-size: 38px;  margin-bottom: 10px;}
   header .intro-text .intro-heading {font-size: 44px; line-height:1;}
   .services .col-md-4 {margin-bottom:20px;}
+  .services button {margin-bottom: 30px;}
+  
+  #whatwebuy.fullscreen {padding-top:81px !important;}
   #whatwebuy .col-sm-4 { width: 33.33333333%; float:left;}
   #whatwebuy .pull-right { float: left!important;  margin-left: 15px;}
   #whatwebuy .nav.nav-tabs li { float: left;  text-align: right;  margin-right: 30px;}
@@ -1320,8 +1346,14 @@ body h2 {
   #whatwebuy .icon-next {margin-right: 10px;}
   .bg-diamond {background: none;}
   #howwepay .col-md-6 { width: 50%;float: left;}
-  #howwepay .nav-tabs>li>a {font-size:15px; padding:10px;}
+  #howwepay .nav-tabs>li>a {font-size:15px; padding:10px 2px;}
   #howwepay .table>thead>tr>th, #howwepay .table>tbody>tr>td {font-size: 14px;  padding: 10px;}
+  #howwepay .panel-heading {  overflow: hidden; padding: 0;}
+  #howwepay h4.panel-title {text-transform: none; font-weight: 500;}
+  #howwepay .panel-title a {padding: 15px 0; background: #2b3042; color: #7b7d87; width: 100%; display: block;}
+  #howwepay .panel-title a[aria-expanded="true"] {background-color: #d19f42; color: #fff;}
+  #howwepay .panel-body, #howwepay .panel-group .panel {padding: 0;}
+  
   .small-screen {display:block;}
   #myRoundabout {display:none;}
   #contact .col-sm-5.col-md-6 {clear:both;}
@@ -1331,7 +1363,7 @@ body h2 {
   #team .col-xs-12 {width: 50%;} 
   .navbar-header.page-scroll {border-bottom: solid 1px #ddd;}
   .bg-banner-how {margin-top: 22px;}
-  .howtosell {padding: 40px 0;}
+  .howtosell {padding: 70px 0 40px;}
   .howtosell .carousel {  width: 48%;  margin-left: 28%;}
   .sidebar-whywepay {margin-top: 20px;}
   .sidebar-whywepay h3 {text-align: center;}
@@ -1355,10 +1387,12 @@ body h2 {
 @media only screen and (max-width: 991px) and  (orientation: landscape)  {
    header .col-md-6 { width: 50%;float: left;}
   .navbar-fixed-top.navbar-shrink .navbar-right {  position: absolute;  right: 10px;}
-  .navbar-default.navbar-shrink .nav li a { padding: 10px 6px;}
+   .navbar-default.navbar-shrink .nav li a { padding: 15px 5px;}
   header .intro-text {padding-bottom: 205px;  background-position:-28px bottom;}
   .navbar-right  {margin-right:0;}
    .services .col-md-4 {margin-bottom:20px;}
+   .services button {margin-bottom: 30px;}
+  
   #whatwebuy h2 {font-size: 23px;}
   #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
     width:100%;
@@ -1368,14 +1402,16 @@ body h2 {
   }
   #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 12%;}
    .bg-diamond {background: none;}
-   #howwepay .nav-tabs>li>a {padding: 20px;}
+   #howwepay .nav-tabs>li>a {padding: 20px 13px;}
+   #howwepay .table>thead>tr>th {padding:20px;}
    #myRoundabout {margin-left: 100px;}
     #team .col-xs-12 {width: 50%;}
     #contact .col-sm-5.col-md-6 {clear:both; width: 100%;}
   #contact .col-sm-5.col-md-6 .col-md-5, #contact .col-sm-5.col-md-6 .col-md-7 {width: 50%; float:left;}
   section#contact #contactForm .col-md-6:first-child {padding-right: 15px;}
   section#contact #contactForm .col-md-6:last-child {  padding-left: 15px;}
-  .howtosell {padding: 40px 0;}
+  .howtosell {padding: 60px 0 40px;}
+  .howtosell .col-md-6 {width: 50%; float: left;}
   .btn.request {  font-size: 12px;}
   .recentpay .icon-prev {  margin-left: -11px;}
   .recentpay .icon-next { margin-right: -12px;}
@@ -1401,12 +1437,13 @@ body h2 {
 }
 
 @media  only screen and (max-width: 768px)   and  (orientation: landscape) {
-  header .intro-text {padding-top: 54px;}
+   header .intro-text {padding-top: 54px;}
    #howwepay .col-sm-5, footer .col-md-6 {width: 50%;}
    footer .col-md-6 {float: left;}
    .navbar-default .nav li a {font-size: 11px;}
-   .navbar-default.navbar-shrink .nav li a {padding: 10px 5px;}
-     
+   .navbar-default.navbar-fixed-top.navbar-shrink .navbar-brand img {width: 55%;}
+   .navbar-default.navbar-shrink .nav li a { padding: 15px 5px;}
+    .services {padding-bottom: 10px;} 
   .banner-thank-you .intro-heading {  font-size: 48px;}
   .banner-thank-you .intro-lead-in {  font-size: 18px;}
   .map-contact iframe {height: 200px;}
@@ -1415,7 +1452,8 @@ body h2 {
 }
 
 @media only screen and (max-width: 480px)  {
-  #howwepay .nav-tabs>li>a {font-size: 12px;  padding: 5px;}
+  #howwepay .nav-tabs>li>a {font-size: 10px;  padding: 5px;}
+  .howtosell {padding-top:60px;}
   #team .col-xs-12 {width: 100%;} 
   header .intro-text .intro-lead-in {font-size:28px;  margin-bottom: 10px;font-weight: 100;}
   header .intro-text .intro-heading {font-size: 32px; line-height:1;}
@@ -1424,8 +1462,8 @@ body h2 {
   #howwepay h4.panel-title {text-transform: none; font-weight: 500;}
   #howwepay .panel-title a {padding: 15px 0; background: #2b3042; color: #7b7d87; width: 100%; display: block;}
   #howwepay .panel-title a[aria-expanded="true"] {background-color: #d19f42; color: #fff;}
-  #howwepay .panel-body {padding: 0;}
-  
+  #howwepay .panel-body, #howwepay .panel-group .panel {padding: 0;}
+
   #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover {
     width:100%;
     height: 100%;
@@ -1448,11 +1486,13 @@ body h2 {
 }
 
 
+
 @media only screen and (max-width: 360px)  {
   header .intro-text .intro-lead-in {  font-size: 18px; margin-bottom:0;}
   header .intro-text .intro-heading {  font-size: 20px;}
   header a.sub-phone {display: none;}
   .navbar-brand {  padding: 14px 0 0 15px;   width: 258px;}
+  #whatwebuy.fullscreen {padding-top:50px !important;}
   #whatwebuy .nav-tabs>li>a {font-size: 12px;}
   #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content {top: 25%;}
   #whatwebuy .whatwebuy-item .whatwebuy-link .whatwebuy-hover .whatwebuy-hover-content strong {margin-bottom: 10px; display: block; font-size: 16px;}
@@ -1493,12 +1533,21 @@ body h2 {
   .recentpay.carousel {width: 46%;}
   .recentpay .icon-prev {  margin-left: -21px;}
   .recentpay .icon-next {  margin-right: -21px;}
-  
+ 
+ .navbar-fixed-top.navbar-shrink .navbar-right {
+  position: absolute;
+  right: 10px;
+  width: 100%;
+  padding: 10px;
+  overflow: auto;
+  max-height: 245px;
+  background-color: #fff;
+}
 }
 
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
-  .navbar-default.navbar-fixed-top.navbar-shrink .navbar-brand {  width: 80%;}
+  .navbar-default.navbar-fixed-top.navbar-shrink .navbar-brand {   width: 78%;  margin-top: 5px;}
   header .intro-text .intro-lead-in { font-size: 18px;}
   header .phone-banner {font-size: 18px;}
   #howwepay .panel-heading {  overflow: hidden; padding: 0;}
