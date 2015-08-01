@@ -609,6 +609,20 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+header .intro-text .intro-heading acronym {
+    -webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	background-color: #fff;
+	display: inline-block;
+	padding: 0 18px 5px;
+    line-height: 40px;
+    margin-left: 15px;
+}
+header .intro-text .intro-heading acronym img {
+    
+}
+
 header .phone-banner {
     font-size: 25px;
     margin-top: 20px;
@@ -774,6 +788,26 @@ section h3.section-subheading {
     z-index: 2;
 }
 
+#whatwebuy .display-view {
+    background: url(../img/icon-view.jpg) no-repeat 0 0;
+    width: 24px;
+    height:24px;
+    display: inline-block;
+}
+.switch {text-align: right;padding-top:16px;}
+#whatwebuy .display-view.list {
+    background-position: 0 0;
+}
+#whatwebuy .display-view.griditem {
+    background-position: -24px 0;
+}
+#whatwebuy .display-view.list:hover {
+    background-position: 0 -24px;
+}
+#whatwebuy .display-view.griditem:hover {
+    background-position: -24px -24px;
+}
+
 #prd-gold .whatwebuy-item {
   padding-right: 11px;
   padding-left: 11px;
@@ -857,6 +891,8 @@ section#contact .icon-place {
 section#contact .icon-date {
     background-position: 0 -779px;
 }
+
+section#contact #contactForm .col-md-6:last-child {padding-left: 2px;}
 
 .temperature {
     font-size: 72px;
@@ -1166,7 +1202,7 @@ header {
 
 a.sub-phone {
     position: relative;
-    margin: 20px 0 20px 30px;
+    margin: 20px 0 5px 30px;
     display: inline-block;
     color: #555b65;
     font-size: 16px;
@@ -1190,7 +1226,12 @@ a.sub-phone:hover {
     background-position: 0 -78px;
     top: 4px;
 }
-
+.address-banner {
+    font-size: 13px;
+    display: block;
+    color: #555b65;
+    font-weight: 500;
+}
 .navbar-default.navbar-shrink .sub-phone {
     display: block;
     margin: 0;
@@ -1450,16 +1491,20 @@ section hr {
 }
 
 #howwepay .table>thead>tr>th {
-    font-size: 16px;
-    padding: 20px;
-    background: #fafafa;
+    font-size: 14px;
+    padding: 16px 30px;
+    background: #d8dbe0;
     border-bottom: none;
+    text-transform: uppercase;
+    color: #686868;
+    border-right: solid 1px #e2e3e3;
 }
 
 #howwepay .table>tbody>tr>td {
     border-top: none;
-    padding: 15px 20px;
+    padding: 16px 30px;
     border-right: solid 1px #e4e4e4;
+    font-weight:normal;
 }
 
 #howwepay .table>tbody>tr>td:last-child {
@@ -1467,17 +1512,46 @@ section hr {
 }
 
 #howwepay .table-striped>tbody>tr {
-    background-color: #f9f9f9;
+    background-color: #fafafa;
 }
 
 #howwepay .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #fff;
+    background-color: #f6f6f6;
 }
 
 #howwepay .table-striped>tbody>tr:hover {
     background-color: #fafafa;
 }
 
+.tables {text-align: left;}
+.tables h3 {
+    background:#d19f42; 
+    color: #fff; 
+    margin-bottom:0; 
+    padding: 22px 0; 
+    font-weight:600;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+    font-size:20px;
+}
+#howwepay button.btn.body-content.download {
+    margin-top:60px;
+    border: none;
+    font-size: 20px;
+    width: 372px;
+	height: 67px;
+	-webkit-border-radius: 34px 33px 33px 34px/33px 33px 34px 34px;
+	-moz-border-radius: 34px 33px 33px 34px/33px 33px 34px 34px;
+	border-radius: 34px 33px 33px 34px/33px 33px 34px 34px;
+	background-color: #d19f42;
+}
+#howwepay .btn.download span {
+    background-position: -539px -644px;
+}
+#howwepay p.note {
+    font-size:13px;
+    text-align: center;
+}
 .tfoot-tbl {
     padding: 20px 60px;
     background: #fafafa;
@@ -1680,6 +1754,21 @@ section hr {
     padding-right: 1px;
     padding-left: 1px;
 }
+
+.bg-comming {
+    color: #fff;
+    background: url(../img/coming-soon.jpg) no-repeat scroll center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 60px 0;
+    text-align: center;
+}
+.bg-comming h2 {color: #fff; font-weight: 100; font-size: 44px;}
+.bg-comming h2 span {font-weight: 600;}
 
 .small-screen {
     display: none;
@@ -2385,8 +2474,17 @@ section hr {
     .bg-diamond {
         background: none;
     }
-    #howwepay .table>thead>tr>th {
-        padding: 20px;
+    .tables h3 {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+    #howwepay .table>thead>tr>th, #howwepay .table>tbody>tr>td {
+        padding: 10px;
+        font-size:13px;
+    }
+    #howwepay button.btn.body-content.download {
+        width: 272px;
+        height: 57px;
     }
     .roundabout-moveable-item {
         width: 320px;
@@ -2516,6 +2614,14 @@ section hr {
     .radio {
         padding-right: 0;
     }
+    .tables h3 {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+     #howwepay .table>thead>tr>th, #howwepay .table>tbody>tr>td {
+        padding: 10px;
+        font-size:13px;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2624,6 +2730,9 @@ section hr {
     #howwepay .panel-body,
     #howwepay .panel-group .panel {
         padding: 0;
+    }
+    .list-price .col-md-6 {
+        width: 100% !important;
     }
     .small-screen {
         display: block;
@@ -3012,6 +3121,17 @@ section hr {
     #howwepay .col-md-6 {
         width: 100%;
         text-align: center !important;
+    }
+    .tables h3 {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+     #howwepay .table>thead>tr>th, #howwepay .table>tbody>tr>td {
+        padding: 10px;
+        font-size:13px;
+    }
+    #howwepay button.btn.body-content.download {
+        width: 100%;
     }
     .tfoot-tbl {
         padding: 20px;
