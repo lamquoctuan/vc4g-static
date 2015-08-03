@@ -120,6 +120,9 @@
                 		    <li>Ta dkf asflo fdskfjp fdfkd</li>
                 		    <li>Ta dkf asflo fdskfjp fdfkd</li>
                 		</ul>
+                		<h3>H3 Title Example</h3>
+                		<p><a href="#">Lorem Ipsum</a> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                		<h4>H4 Title Example</h4>
             		</div>
             		<div class="pagination-share mt40">
             		    <div class="pagi">
@@ -137,19 +140,30 @@
             	<div class="col-md-4">
             		<div class="pricing mt40">
             	        <h4>Download Pricing</h4>
-            	        <form accept-charset="UTF-8" action=""  method="post" >
+                        <form accept-charset="UTF-8" id="downloadForm" novalidate>
                             <div class="form-group">
-		    					 <input type="text" class="form-control" placeholder="Your Name" id="name" required="" data-validation-required-message="Please enter your name." aria-invalid="false">
-		    					 <p class="help-block text-danger"></p>
-    					 	</div>
-                            
+                                <input type="text" class="form-control" placeholder="Your Name" id="name" name="name"
+                                        required="" data-validation-required-message="Please enter your name." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        
                             <div class="form-group">
-		    					 <input type="text" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your mail." aria-invalid="false">
-		    					 <p class="help-block text-danger"></p>
-    					 	</div>
-                         </form>
-                         <a href="" class="btn download"><span>DOWNLOAD</span></a>
-                         <p class="text-center small">Enter your name and email below and click, "DOWNLOAD!"</p>
+                                <input type="text" class="form-control" placeholder="Email Address" id="email" name="email"
+                                        required="" data-validation-required-message="Please enter your mail." aria-invalid="false">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <a href="javascript:void(0);" class="btn download"><span>DOWNLOAD</span></a>
+                            <input type="hidden" name="action" value="ajax_download"/>
+                            <input type="hidden" name="security" value="<?php echo $ajaxDownloadForm;?>"/>
+                            <input type="hidden" id="thanks" value="/thank/download/"/>
+                        </form>
+                        <p class="text-center small">Enter your name and email below and click, "DOWNLOAD!"</p>
+                        <script type="text/javascript">
+                        var $formDownload = $('#downloadForm');
+                        $formDownload.find('.btn.download').click(function(){
+                            $formDownload.submit();    
+                        });
+                        </script>
             	    </div>
             	    <div class="recent-post mt30">
             	        <h4>Recent Posts</h4>
@@ -210,41 +224,40 @@
 						<p>Duis aute irure dolor in reprehenderit cillum </p>
 					</div>
 					<div class="col-md-7">
-						<form name="sentMessage" id="contactForm">
-	    					<div class="row">
-			    				<div class="col-md-6">
-			    					<div class="form-group">
-				    					 <input type="text" class="form-control" placeholder="Email *" id="email" required="" data-validation-required-message="Please enter your mail." aria-invalid="false">
-				    					 <p class="help-block text-danger"></p>
-			    					 </div>
-			    				</div>
-			    				<div class="col-md-6">
-			    					<div class="form-group">
-				    					<input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number." aria-invalid="false">
-				    					<p class="help-block text-danger"></p>
-			    					</div>
-			    				</div>
-		    				
-			    			</div>
-			    			<div class="row">
-			    				<div class="col-lg-12">
-			    					<div class="form-group">
-			    						<textarea class="form-control" placeholder="Your Message" id="message" required="" data-validation-required-message="Please enter your message." aria-invalid="false"></textarea>
-				    					 
-				    					 <p class="help-block text-danger"></p>
-			    					 </div>
-			    				</div>
-			    				
-		    				
-			    			</div>
-			    			<div class="row">
-			    				<div class="col-lg-12">
-			    					<div id="success"></div>
-		                        	<button type="submit" class="btn btn-yellow">Send</button>
-			    				</div>
-			    			</div>
-			    			
-		    			</form>
+						<form name="subscribeForm" id="contactForm" novalidate="">
+						    <div class="row">
+						        <div class="col-md-7">
+						            <div class="form-group">
+						                <input type="text" class="form-control" placeholder="Email *" id="email" name="email" required="" data-validation-required-message="Please enter your mail." aria-invalid="false">
+						                <p class="help-block text-danger"></p>
+						            </div>
+						        </div>
+						        <div class="col-md-5">
+						            <div class="form-group">
+						                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="phone" required="" data-validation-required-message="Please enter your phone number." aria-invalid="false">
+						                <p class="help-block text-danger"></p>
+						            </div>
+						        </div>
+						
+						    </div>
+						    <div class="row">
+						        <div class="col-lg-12">
+						            <div class="form-group">
+						                <textarea class="form-control" placeholder="Your Message" id="message" name="message" required="" data-validation-required-message="Please enter your message." aria-invalid="false"></textarea>
+						                <p class="help-block text-danger"></p>
+						            </div>
+						        </div>
+						    </div>
+						    <div class="row">
+						        <div class="col-lg-12">
+						            <div id="success"></div>
+						            <button type="submit" class="btn btn-yellow">Send</button>
+						        </div>
+						    </div>
+						    <input type="hidden" name="action" value="ajax_subscribe">
+						    <input type="hidden" name="security" value="b4b5cbc90d">
+						    <input type="hidden" id="thanks" value="/thank/newsletter/">
+						</form>
 			    			
 		    			
 					</div>

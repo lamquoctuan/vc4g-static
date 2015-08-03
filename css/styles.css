@@ -434,6 +434,8 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+.help-block.text-danger li {color: red; font-size:11px;}
+
 .navbar-default {
     border-color: transparent;
     background-color: #fff;
@@ -892,7 +894,7 @@ section#contact .icon-date {
     background-position: 0 -779px;
 }
 
-section#contact #contactForm .col-md-6:last-child {padding-left: 2px;}
+section#contact #contactForm .col-md-5 {padding-left: 2px;}
 
 .temperature {
     font-size: 72px;
@@ -912,19 +914,17 @@ section#contact #contactForm .col-md-6:last-child {padding-left: 2px;}
 
 section#contact .form-group {
     margin-bottom: 2px;
-    height: 43px;
 }
 
-section#contact #contactForm .col-md-6:first-child {
+section#contact #contactForm .col-md-7 {
     padding-right: 2px
 }
 
-section#contact #contactForm .col-md-6:last-chifld {
+section#contact #contactForm .col-md-5 {
     padding-left: 2px
 }
 
 section#contact .btn.btn-yellow {
-    margin-top: 20px;
     color: #fff;
     width: 100%;
     padding-left: 0;
@@ -978,9 +978,8 @@ section#contact:-ms-input-placeholder {
     color: #bbb;
 }
 
-section#contact .text-danger {
-    color: #e74c3c;
-}
+section#contact .help-block {margin-bottom:0;}
+section#contact .help-block.text-danger ul {padding-left: 15px;}
 
 footer {
     padding: 25px 0;
@@ -1272,6 +1271,7 @@ a.sub-phone:hover {
 }
 
 .roundabout-moveable-item {
+    top: -111px !important;
     height: 460px;
     width: 460px;
     cursor: pointer;
@@ -1427,7 +1427,8 @@ body h2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+.webuy .help-block ul {padding:0 20px;}
+.webuy .help-block li {background-image: none; padding-left:0; }
 .webuy .btn.body-content {
     color: #fff;
     border-color: #fff;
@@ -1731,6 +1732,9 @@ section hr {
     color: #acacac;
     font-size: 13px;
 }
+
+.bg-deal .help-block ul, .form-message .help-block ul {padding-left: 15px;}
+.bg-deal .help-block.text-danger li {color: rgba(255,255,255,0.3);}
 
 .btn.btn-yellow {
     background: #d19f42;
@@ -2049,9 +2053,16 @@ section hr {
     width: 100%;
 }
 
+.body-blog h2, .body-blog h3, .body-blog h4 {
+    color:#bababa;
+    font-weight:600;
+    text-transform: none;
+    margin: 20px 0 15px;
+}
 .body-blog ul,
 .body-blog ol {
-    margin-left: 15px;
+    margin: 0 15px;
+    padding: 0;
 }
 
 .body-blog ul li {
@@ -2418,6 +2429,8 @@ section hr {
     border-radius: 0;
 }
 
+
+
 @media only screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
     .navbar-default.navbar-fixed-top.navbar-shrink .navbar-brand img {
         width: 54%;
@@ -2748,11 +2761,12 @@ section hr {
         width: 50%;
         float: left;
     }
-    section#contact #contactForm .col-md-6:first-child {
-        padding-right: 15px;
+    #contact #contactForm .col-md-7 {
+        padding-right: 15px
     }
-    section#contact #contactForm .col-md-6:last-child {
-        padding-left: 15px;
+    
+    #contact #contactForm .col-md-5 {
+        padding-left: 15px
     }
     #team .col-xs-12 {
         width: 50%;
@@ -2882,11 +2896,11 @@ section hr {
         width: 50%;
         float: left;
     }
-    section#contact #contactForm .col-md-6:first-child {
-        padding-right: 15px;
+    #contact #contactForm .col-md-7 {
+        padding-right: 15px
     }
-    section#contact #contactForm .col-md-6:last-child {
-        padding-left: 15px;
+    #contact #contactForm .col-md-5 {
+        padding-left: 15px
     }
     .howtosell {
         padding: 60px 0 40px;
